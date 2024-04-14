@@ -5,12 +5,12 @@
 
 template<typename T, int size>
 class TStack {
-     private:
+ private:
     static const int KSize = size;
     T data[KSize];
     int top;
 
-     public:
+ public:
     TStack() : top(0) {}
     void push(const T &item) {
         if (top <= size - 1)
@@ -34,5 +34,6 @@ class TStack {
             throw std::string("Empty!");
     }
 };
+
 
 #endif  // INCLUDE_TSTACK_H_
